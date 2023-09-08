@@ -6,6 +6,7 @@ return {
   { "s1n7ax/nvim-window-picker",     enabled = false },
   { "stevearc/aerial.nvim",          enabled = false },
   { "Shatur/neovim-session-manager", enabled = false },
+  { "AstroNvim/astrotheme",          enabled = false },
   -- Install onedark theme
   {
     "navarasu/onedark.nvim",
@@ -28,7 +29,7 @@ return {
   -- Octo
   {
     "pwntester/octo.nvim",
-    config = function() require('octo').setup({ default_remote = { "upstream", "origin" } }) end,
+    config = function() require('octo').setup({ default_remote = { "upstream" } }) end,
     lazy = false
   },
   -- cmp git
