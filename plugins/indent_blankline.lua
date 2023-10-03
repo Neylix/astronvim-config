@@ -1,9 +1,7 @@
 return {
   "lukas-reineke/indent-blankline.nvim",
   opts = {
-    char = '┊',
-    show_trailing_blankline_indent = false,
-    show_current_context = false,
-    use_treesitter = false
+    indent = {char = '┊', smart_indent_cap = true},
+    whitespace = {remove_blankline_trail = false}
   }
 }
