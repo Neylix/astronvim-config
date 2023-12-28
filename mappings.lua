@@ -27,7 +27,7 @@ return {
     ["L"] = { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end, desc =
     "Next buffer" },
     ["H"] = { function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end, desc =
-    "Previous buffer" },
+    "Previous buffer" }
   },
   v = {
     -- Do not copy when deletting
@@ -40,6 +40,8 @@ return {
     -- Remap to move highlighted lines
     ["J"] = { ":m '>+1<CR>gv=gv" },
     ["K"] = { ":m '<-2<CR>gv=gv" },
+    ["<leader>r"] = { "\"hy:s/<C-r>h/" },
+    ["<leader>R"] = { "\"hy:%s/<C-r>h/" }
   },
   x = {
     -- Do not copy when deletting
