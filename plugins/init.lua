@@ -16,6 +16,14 @@ return {
     end
   },
   -- Install treesitter-textobjects
+  {
+    'akinsho/flutter-tools.nvim',
+    dependencies = {
+        'nvim-lua/plenary.nvim',
+        'stevearc/dressing.nvim', -- optional for vim.ui.select
+    }
+  },
+  -- Install treesitter-textobjects
   "nvim-treesitter/nvim-treesitter-textobjects",
   -- Install hop
   {
