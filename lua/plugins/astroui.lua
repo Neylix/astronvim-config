@@ -5,10 +5,16 @@
 
 ---@type LazySpec
 return {
-  "AstroNvim/astroui",
-  ---@type AstroUIOpts
-  opts = {
-    -- change colorscheme
-    colorscheme = "onedark",
+  {
+    "AstroNvim/astroui",
+    ---@type AstroUIOpts
+    opts = {
+      -- change colorscheme
+      colorscheme = "onedark",
+    },
+  },
+  {
+    "rebelot/heirline.nvim",
+    opts = function(_, opts) opts.winbar = nil end,
   },
 }
