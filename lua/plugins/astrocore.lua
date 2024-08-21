@@ -59,8 +59,6 @@ return {
         ["<Leader>god"] = { "<cmd>Octo review discard<cr>" },
         ["<Leader>gor"] = { "<cmd>Octo review resume<cr>" },
         ["<Leader>goc"] = { "<cmd>Octo review commit<cr>" },
-        ["gdh"] = { "<cmd>diffget //2<cr>" },
-        ["gdl"] = { "<cmd>diffget //3<cr>" },
       },
       v = {
         -- Do not copy when deletting
